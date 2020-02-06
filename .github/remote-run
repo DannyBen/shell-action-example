@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+repo=$1
+script=$2
+shift 2
+url="https://raw.githubusercontent.com/$repo/master/$script"
+curl -s $url | bash -s $*
