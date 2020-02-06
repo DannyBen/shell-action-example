@@ -1,11 +1,9 @@
-name: Test
-on:
-  pull_request:
-  push: { branches: master }
+name: Demo
+on: [push]
 
 jobs:
   test:
-    name: Debug
+    name: Demonstrate running github-hosted shell scripts
 
     runs-on: ubuntu-latest
 
